@@ -34,8 +34,33 @@ while (iterable < listIngredients.length){
 switchVisibility(tohide, toshow)
 };
 function separe(buttons){
-  for (let i = 0; i < buttons.length; i++){
-      buttons[i].style.translate = 0;
-      buttons[i].style.opacity = 1;
-    }
+  setTimeout(() => {
+    for (let i = 0; i < buttons.length; i++){
+        buttons[i].style.translate = 0;
+        buttons[i].style.opacity = 1;
+      }
+  }, 50)
 };
+function reverseWord(word) {
+  let reversedWord = '';
+  iterable = word.length - 1;
+  for (iterable; iterable >= 0; iterable--){
+      reversedWord += word[iterable];
+  }
+  return reversedWord;
+}
+function palindromCheck(word) {
+  let reversedWord = reverseWord(word);
+  if (reversedWord == word) {
+    return true
+  }
+  return false
+}
+function oddEvenGame(userNumber, userOption){
+  let pcNumber = randomNumber(1000);
+  let finalNumber = parseInt(userNumber) + pcNumber;
+  if ((userOption == 'odd' && finalNumber % 2) || (userOption == 'even' && !(finalNumber % 2))) {
+      return [pcNumber, finalNumber, true]
+  }
+  return [pcNumber, finalNumber, false]
+}

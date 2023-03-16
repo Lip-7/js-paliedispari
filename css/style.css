@@ -18,6 +18,23 @@ body{
 }
 a{
     color: white;
+    text-decoration: none;
+}
+nav{
+    position: fixed;
+    top: 5px;
+    right: 100px;
+}
+nav a{
+    margin: 0 10px;
+    transition: all 1s;
+    translate: 200px;
+}
+nav a.active{
+    color: var(--light-color);
+}
+nav a:hover{
+    color: var(--light-color);
 }
 .main-btns button{
     color: white;
@@ -44,4 +61,8 @@ a{
     background-color: white;
     background-image: none;
     transition: all 1s ease-out;
+}
+/* main */
+main{
+    color: var(--violet);
 }

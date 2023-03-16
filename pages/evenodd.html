@@ -6,12 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>PalieSpali</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>EvenOdd</title>
 </head>
-<body>
+<body class="w-100 vh-100">
+    <div class="container d-flex justify-content-center align-items-center h-100">
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="./pali.html">Palindroms</a>
+            <a href="./evenodd.html" class="active">Game Even and Odd</a>
+        </nav>
+        <main class="card px-5 py-4 text-center d-flex flex-column align-items-center justify-content-center">
+            <h2 class="mb-3">Challenge me at EVEN and ODD game!</h2>
+            <div class="d-flex justify-content-between align-items-center gap-5 mb-3">
+                <input class="text-center" type="number" placeholder="Insert your number!">
+                <select name="gameOption" id="gameOption" class="input-group-text">
+                    <option value="odd">ODD</option>
+                    <option value="even">EVEN</option>
+                </select>
+            </div>
+            <div id="resultDetails" class="resultDetails d-none">
+                <h2 id="gameWinner" class="mb-3">The winner is</h2>
+                <div class="sheets d-flex mb-4 flex-wrap">
+                    <h4 class="mx-2">My number was</h4>
+                    <h4 class="mx-2">Your number was</h4>
+                    <h4 class="mx-2">The total is</h4>
+                </div>
+            </div>
+            <button id="btnGameStart" class="py-1 px-3 rounded-3 btn btn-dark">Submit</button>
+        </main>
+    </div>
 
-    <script src="./js/utility.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="../js/utility.js"></script>
+    <script src="../js/evenodd.js"></script>
 </body>
 </html>
