@@ -1,0 +1,1 @@
+separe(document.querySelectorAll('button'))

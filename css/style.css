@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --fuchsia: #9C7BA6;
+    --violet: #413473;
+    --dark-color:#282240;
+    --light-color:#F2D8A7;
+    --peach: #F2AB91;
+    /* shape: #4B377C #EEAB91 #34284C*/
+}
+body{
+    background-image: url(../img/sunset-1373171.jpg);
+    background-position: center;
+    background-size: cover;
+}
+a{
+    color: white;
+}
+.main-btns button{
+    color: white;
+    background-color: transparent;
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 3px 20px;
+    border: 0px;
+    border-radius: 50px;
+    background-image: linear-gradient(to top,#EEAB91, #34284C, #EEAB91);
+    box-shadow: 0px 0px 50px var(--peach);
+    translate: 0 200px;
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+.main-btns button:hover a{
+    background-color: white;
+    background-image: linear-gradient(to top,#EEAB91, #34284C, #EEAB91);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.main-btns button:hover{
+    background-color: white;
+    background-image: none;
+    transition: all 1s ease-out;
+}
