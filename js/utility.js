@@ -57,7 +57,7 @@ function palindromCheck(word) {
   return false
 }
 function oddEvenGame(userNumber, userOption){
-  let pcNumber = randomNumber(1000);
+  let pcNumber = randomNumber(5);
   let finalNumber = parseInt(userNumber) + pcNumber;
   if ((userOption == 'odd' && finalNumber % 2) || (userOption == 'even' && !(finalNumber % 2))) {
       return [pcNumber, finalNumber, true]
