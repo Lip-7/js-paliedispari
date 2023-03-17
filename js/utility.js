@@ -43,8 +43,7 @@ function separe(buttons){
 };
 function reverseWord(word) {
   let reversedWord = '';
-  iterable = word.length - 1;
-  for (iterable; iterable >= 0; iterable--){
+  for (let iterable = word.length - 1; iterable >= 0; iterable--){
       reversedWord += word[iterable];
   }
   return reversedWord;
